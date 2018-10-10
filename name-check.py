@@ -1,4 +1,4 @@
-import os 
+import os
 import sys
 import numpy
 import pandas as pd
@@ -6,10 +6,10 @@ import pandas as pd
 
 
 # first old, second new
-old_dir = "testdir/old"
-new_dir = "testdir/new"
-#old_dir = sys.argv[1]
-#new_dir = sys.argv[2]
+#old_dir = "testdir/old"
+#new_dir = "testdir/new"
+old_dir = sys.argv[1]
+new_dir = sys.argv[2]
 print("old names are : " + old_dir)
 print("new names are : " + new_dir)
 
@@ -58,3 +58,5 @@ for n_files in new_names:
 
 o_files_split.to_csv('old_names_split.csv')
 n_files_split.to_csv('new_names_split.csv')
+
+
