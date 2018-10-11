@@ -33,7 +33,7 @@ group_scores <- function(old,new){
     }
   
   }
-  return(master)
+  return(master[-1,])
 }
 
 all_changed <- group_scores(o_names,n_names)
